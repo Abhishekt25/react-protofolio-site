@@ -9,58 +9,69 @@ interface Service {
 const CompanyDetails: React.FC = () => {
   const services: Service[] = [
     {
-      title: 'Web Development',
-      description: 'Custom web applications tailored to your business needs.',
-      icon: '💻'
+      title: 'Networking & Surveillance',
+      description:
+        'Expert setup of networking solutions and surveillance systems to keep your business connected and secure.',
+      icon: '🌐',
     },
     {
-      title: 'Mobile Apps',
-      description: 'iOS and Android applications to reach your customers anywhere.',
-      icon: '📱'
+      title: 'CCTV Installation & Repair',
+      description:
+        'Professional installation and maintenance of CCTV cameras for homes, offices, and commercial spaces.',
+      icon: '📹',
     },
     {
-      title: 'Cloud Solutions',
-      description: 'Scalable cloud infrastructure for your growing business.',
-      icon: '☁️'
+      title: 'Laptop & Desktop Services',
+      description:
+        'Repairing, servicing, and refurbishing laptops and desktops to keep your systems running smoothly.',
+      icon: '💻',
     },
     {
-      title: 'IT Consulting',
-      description: 'Expert advice to optimize your technology strategy.',
-      icon: '📊'
+      title: 'Security Solutions',
+      description:
+        'Installation of biometric devices, access control systems, and advanced security solutions.',
+      icon: '🔒',
     },
     {
-      title: 'Cybersecurity',
-      description: 'Protect your business from digital threats.',
-      icon: '🔒'
+      title: 'Smart TV & LED Setup',
+      description:
+        'Installation and configuration of Smart Google TV & LEDs ranging from 24" to 110".',
+      icon: '📺',
     },
     {
-      title: 'Data Analytics',
-      description: 'Turn your data into actionable insights.',
-      icon: '📈'
-    }
+      title: 'Web Design & Development',
+      description:
+        'Custom websites, web apps, and ongoing maintenance to build your online presence.',
+      icon: '🖥️',
+    },
   ];
 
   return (
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-secondary mb-6">Our Services</h2>
-        <p className="max-w-3xl mx-auto text-center text-lg mb-12">
-          We offer a comprehensive range of IT services designed to help your business thrive in the digital landscape.
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
+          Our Services
+        </h2>
+        <p className="max-w-3xl mx-auto text-center text-lg text-gray-600 mb-12">
+          At All IT Goods, we provide end-to-end IT infrastructure and
+          development solutions — from hardware services and security systems to
+          full-stack web development.
         </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-gray-50 p-8 rounded-lg text-center transition-transform hover:scale-105 hover:shadow-lg"
+            <div
+              key={index}
+              className="bg-gray-50 p-8 rounded-2xl text-center transition-transform hover:scale-105 hover:shadow-lg shadow-md"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-secondary mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                {service.title}
+              </h3>
               <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

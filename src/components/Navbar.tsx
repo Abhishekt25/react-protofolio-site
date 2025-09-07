@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // lightweight icons
+import { Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed w-full bg-white shadow-md z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex justify-between items-center">
         {/* Logo */}
-        <div className="navbar-brand">
+        <div className="flex items-center">
           <img
-            src="/src/assets/images/logo.png"
+            src="/images/allitimagess.jpg"
             alt="IT Services Logo"
-            className="w-36"
+            className="h-14 w-auto object-contain"
           />
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex items-center space-x-10">
           <li>
             <a
               href="#home"
-              className="text-gray-800 font-medium hover:text-primary transition-colors"
+              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200"
             >
               Home
             </a>
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#about"
-              className="text-gray-800 font-medium hover:text-primary transition-colors"
+              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200"
             >
               About Us
             </a>
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#services"
-              className="text-gray-800 font-medium hover:text-primary transition-colors"
+              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200"
             >
               Services
             </a>
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               href="#contact"
-              className="text-gray-800 font-medium hover:text-primary transition-colors"
+              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200"
             >
               Contact
             </a>
@@ -61,46 +61,21 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
           <ul className="flex flex-col space-y-4 py-4 px-6">
-            <li>
-              <a
-                href="#home"
-                className="block text-gray-800 font-medium hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="block text-gray-800 font-medium hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="block text-gray-800 font-medium hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="block text-gray-800 font-medium hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </a>
-            </li>
+            {["Home", "About Us", "Services", "Contact"].map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item.toLowerCase().replace(" ", "")}`}
+                  className="block text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
