@@ -27,7 +27,7 @@ const Contact = () => {
           </a>
         </p>
         <p>
-          <strong>Address:</strong> 96, Durgapura, Near Radisson Blue Hotel, Jaipur
+          <strong>Address:</strong> Plot No. C-95 Arg Puram, Nayala Road Kanato, Jaipur, RJ 302012
         </p>
       </div>
     </section>

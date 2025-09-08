@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               </a>
             </p>
             <p className="text-gray-400">
-              96, Durgapura, Near Radisson Blu Hotel, Jaipur
+             Plot No. C-95 Arg Puram, Nayala Road Kanato, Jaipur, RJ 302012
             </p>
           </div>
         </div>

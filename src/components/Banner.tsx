@@ -25,7 +25,7 @@ const Banner: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Innovative IT Solutions for Your Business
+         Empowering Your Business Through Reliable IT Solutions
         </motion.h1>
 
         <motion.p

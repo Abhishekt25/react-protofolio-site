@@ -21,12 +21,6 @@ const AboutUs: React.FC = () => {
       bio: 'Hemant is an expert in networking, surveillance, and IT infrastructure solutions. He ensures that clients get the best consultation and services for their business needs.',
       image: '/images/hemant.jpg',
     },
-    {
-      name: 'Abhishek Tiwari',
-      role: 'Software Development Head',
-      bio: 'Abhishek leads the software development division, specializing in web design, web app development, and custom IT solutions that help businesses scale efficiently.',
-      image: '/images/abhishek.jpg',
-    },
   ];
 
   return (
@@ -49,7 +43,7 @@ const AboutUs: React.FC = () => {
           <h3 className="text-3xl font-semibold text-center text-gray-800 mb-12">
             Meet Our Leadership Team
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
