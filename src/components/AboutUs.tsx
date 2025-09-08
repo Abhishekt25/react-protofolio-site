@@ -25,7 +25,7 @@ const AboutUs: React.FC = () => {
       name: 'Abhishek Tiwari',
       role: 'Software Development Head',
       bio: 'Abhishek leads the software development division, specializing in web design, web app development, and custom IT solutions that help businesses scale efficiently.',
-      image: '/images/abhishek.jpg',
+      image: '/images/abhisheks.jpg',
     },
   ];
 
