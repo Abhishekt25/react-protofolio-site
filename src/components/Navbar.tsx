@@ -9,12 +9,18 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <img
-            src="/images/allitimagess.jpg"
-            alt="IT Services Logo"
-            className="h-14 w-auto object-contain"
-          />
+          <a
+            href="https://www.allitgoods.com/"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/allitimagess.jpg"
+              alt="IT Services Logo"
+              className="h-16 w-auto object-contain transition-transform duration-300 hover:scale-105 cursor-pointer"
+            />
+          </a>
         </div>
+
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-10">
