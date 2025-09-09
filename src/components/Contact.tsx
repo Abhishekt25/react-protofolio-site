@@ -27,7 +27,7 @@ const Contact = () => {
           </a>
         </p>
         <p>
-         <strong>Registered Address (Regg):</strong> Plot No. C-95, Arg Puram, Nayala Road, Kanato, Jaipur, RJ 302012
+         <strong>Registered Address:</strong> Plot No. C-95, Arg Puram, Nayala Road, Kanato, Jaipur, RJ 302012
         </p>
       </div>
     </section>
