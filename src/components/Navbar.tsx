@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a
-            href="https://www.allitgoods.com/"
+            href="https://www.allitgoods.com/"  
             rel="noopener noreferrer"
           >
             <img
