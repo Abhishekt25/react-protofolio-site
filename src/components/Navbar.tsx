@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="/images/allitgoods.jpg"
+              src="/images/allitgoods.jpeg"
               alt="IT Services Logo"
               className="h-16 w-auto object-contain transition-transform duration-300 hover:scale-105 cursor-pointer"
             />
