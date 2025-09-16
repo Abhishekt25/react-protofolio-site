@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               </a>
             </p>
             <p className="text-gray-400">
-             Plot No. C-95 Arg Puram, Nayala Road Kanato, Jaipur, RJ 302012
+             Plot No. C-95 Arg Puram, Nayala Road Kanoto, Jaipur, RJ 302012
             </p>
           </div>
         </div>
